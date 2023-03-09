@@ -1,12 +1,15 @@
 import React from "react";
-import styles from "./top-bar.scss";
+import styles from "./top-bar.module.scss";
+import { AiOutlineUser } from "react-icons/ai";
 
 const TopBar = (props) => {
   return (
     <>
-      <ul className={styles.topBarWrapper}>
-        <li className={styles.iconWrapper}>icona</li>
-      </ul>
+      <div className={styles.topBarWrapper}>
+        <button className={styles.iconWrapper}>
+          <AiOutlineUser className={styles.icon} size={"1.5rem"} />
+        </button>
+      </div>
     </>
   );
 };
