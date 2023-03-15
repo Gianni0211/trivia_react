@@ -1,0 +1,16 @@
+.titlesWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  .title {
+    color: var(--accent-color);
+    margin: 0;
+    font-size: 50px;
+  }
+  .desc {
+    color: var(--primary-dark-color);
+    margin: 0;
+  }
+}
