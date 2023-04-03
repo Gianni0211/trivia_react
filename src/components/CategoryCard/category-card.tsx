@@ -1,10 +1,13 @@
-import React from "react";
+import * as React from "react";
 import styles from "./category-card.module.scss";
 import { AiOutlineCheck } from "react-icons/ai";
 
-const CategoryCard = (props) => {
-  const { title, questionNo, img, bgColor } = props;
-
+const CategoryCard: React.FC<any> = ({
+  title,
+  questionNo,
+  img,
+  bgColor,
+}): JSX.Element => {
   const cardStyle = {
     background: `linear-gradient(to bottom, ${bgColor}, ${bgColor})`,
   };

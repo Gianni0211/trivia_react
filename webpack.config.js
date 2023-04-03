@@ -24,6 +24,22 @@ module.exports = {
         use: "ts-loader",
         exclude: /node_modules/,
       },
+      {
+        test: /\.css$/,
+        use: [
+          "style-loader",
+          {
+            loader: "css-loader",
+            options: {
+              modules: {
+                localIdentName: "[hash:base64]", // default
+                auto: true, // default
+              },
+              sourceMap: true,
+            },
+          },
+        ],
+      },
     ],
   },
   resolve: {
