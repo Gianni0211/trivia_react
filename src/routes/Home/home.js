@@ -1,5 +1,5 @@
 import React from "react";
-import CategoryCard from "../../components/CategoryCard/category-card";
+import CategoryCard from "../../components/CategoryCard/category-card.tsx";
 import Titles from "../../components/Titles/titles";
 import TopBar from "../../components/TopBar/top-bar";
 import styles from "./home.module.scss";
