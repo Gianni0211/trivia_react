@@ -1,7 +1,7 @@
-import React from "react";
+import * as React from "react";
 import styles from "./question.module.scss";
 
-const Question = (props) => {
+const Question: React.FC<any> = (props) => {
   return <div className={styles.questionWrapper}>Question</div>;
 };
 
