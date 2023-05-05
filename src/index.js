@@ -5,6 +5,7 @@ import "./index.scss";
 import reportWebVitals from "./reportWebVitals";
 import Home from "./routes/Home/home";
 import Question from "./routes/Question/question";
+import LoginModal from "./components/LoginModal/login-modal";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const router = createBrowserRouter([
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
   {
     path: "question",
     element: <Question />,
+  },
+  {
+    path: "login",
+    element: <LoginModal />,
   },
 ]);
 root.render(

@@ -1,0 +1,43 @@
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  .modalTitle {
+    color: var(--primary-dark-color);
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+  }
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .input {
+      padding: 8px;
+      border-radius: 10px;
+      border: 1px solid var(--primary-color);
+      &:focus {
+        outline: none !important;
+        border: 1px solid var(--accent-color);
+      }
+
+      &::placeholder {
+        color: var(--primary-dark-color);
+        font-family: "Barlow", sans-serif;
+      }
+    }
+  }
+  .submitBtn {
+    background-color: var(--secondary-color);
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    color: #ffff;
+    margin-top: 10px;
+    width: 75%;
+    align-self: center;
+    font-family: "Barlow", sans-serif;
+  }
+}
